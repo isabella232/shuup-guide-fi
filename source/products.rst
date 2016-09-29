@@ -1,242 +1,250 @@
-Products
+Tuotteet
 ========
 
-Adding Products
----------------
+Tuotteiden lisääminen
+---------------------
 
-The Shuup Admin provides a simple interface for adding products to your
-shop.
+Shuup hallintapaneeli tarjoaa helppokäyttöisen käyttöliittymän
+tuotteiden lisäämiseen verkkokauppaasi.
 
-To navigate to the Products section of the Shuup Admin, open the Admin
-menu and select the `Products` section under the `Products` category.
+Päästäksesi Shuup hallintapaneelin Tuotteet-osioon, valitse
+hallintapaneelin valikosta kategoria `Tuotteet` ja alle aukeavasta
+alavalikosta osio `Tuotteet`.
 
 .. image:: products/products-menu.png
 
-On the `Products` page, you will see a list of all of the products
-currently in your shop. In the upper right-hand corner there is a
-button labelled `New product` for creating new products. Clicking
-this will take you to the new product form, where you can enter
-information about your new product.
+`Tuotteet`-sivulta löydät listan kaikista kaupassasi olevista
+tuotteista. Osion oikeasta yläkulmasta löydät painikkeen `Uusi tuote`.
 
 .. image:: products/new-product-button.png
 
-New Product Form
-~~~~~~~~~~~~~~~~
+Uusi tuote –lomake
+~~~~~~~~~~~~~~~~~~
+
+Valitsemalla `Uusi tuote` pääset `Uusi tuote` –lomakkeeseen, mihin
+uuden lisättävän tuotteen tiedot syötetään.
 
 .. image:: products/new-product-form.png
 
-Like other Shuup Admin forms, required fields are marked with a red
-asterisk and missing or invalid fields will be highlighted red upon form
-submission.
+Kuten muissakin Shoop hallintapaneelin lomakkeissa, pakolliset
+kentät on merkitty punaisella tähdellä ja puuttuvat tai virheellisen
+tiedon sisältävät kentät korostetaan punaisella lomakkeen
+tallentamisen yhteydessä.
 
-The left side of the form contains a number of sections of the form
-(shown as tabs), and selecting a tab will present the different fields
-and options for that section.
+Lomakkeen vasemmassa laidassa on valikko, jossa olevat valinnat
+ohjaavat lomakkeen eri välilehtiin ja avaa tuotteen eri
+ominaisuuksien määrittämiseen tarvittavat kentät.
 
-Base Product Tabs
-^^^^^^^^^^^^^^^^^^
-
-The top section of the form contains most of the basic product information
-and settings.
-
-General Information
-    General information about the product, including product type, name,
-    and product description.
-Additional Details
-    Miscellaneous information regarding the product, such as the product's
-    stock and shipping mode, barcode information, and relevant keywords.
-Accounting
-    Bookkeeping-related information.
-Physical Properties
-    Physical dimensions and unit information for the product.
-Manufacturer
-    Selection choice for the product's manufacturer.
-
-Shop-Specific Tabs
-^^^^^^^^^^^^^^^^^^
-
-Following the base product section are the following shop-specific tabs.
-The names of these are preceeded by the relevant shop's name (initially
-*Default*):
-
-Visibility
-    Front-end visibility settings for a specific shop.
-Purchasing
-    Pricing, supplier, and multiple-purchase settings.
-Shipping & Payment
-    Shipping and payment service-related settings (used to limit customer
-    shipping and payment choices on checkout).
-
-Media Tabs
-^^^^^^^^^^^^^^^^^^
-
-These sections are for managing the image and digital media content related
-to the product.
-
-Product Media
-    Product-related file uploader and selector.
-Product Images
-    Product image uploader and selector.
-
-.. tip::
-   Advanced Product Media settings can be configured to deliver digital
-   and downloadable content.
-
-Customer Group Pricing Tab
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Pricing settings based on customer groups. If a customer belongs to
-multiple groups, they will be presented the lowest price of the groups
-to which they belong.
-
-.. note::
-   Customer Group pricing is currently not configurable for specific shops.
-
-Saved Product Form
-~~~~~~~~~~~~~~~~~~
-
-Once the product has been successfully saved, additional options will be
-available from the product edit form.
-
-Attributes Tab
-^^^^^^^^^^^^^^
-
-See Attributes_.
-
-Stock Management Tab
+Perustietovälilehdet
 ^^^^^^^^^^^^^^^^^^^^
 
-For stocked product, this should display any stock-related management tasks
-depending on the product's supplier settings.
+`Uusi tuote` –lomakkeen vasemman laidan valikon ylin välilehti
+sisältää kentät tuotteen perustietojen syöttämiseen.
+
+Yleiset tiedot
+    Tuotteen yleiset tiedot, kuten tuotteen tyyppi, nimi ja
+    tuotteen kuvaus.
+Lisätietoja
+    Lisätietoja tuotteesta, kuten tuotteen varastotiedot,
+    toimitustavat, viivakoodin tiedot ja hakutermit.
+Kirjanpito
+    Kirjanpitoon liittyvät tiedot.
+Fyysiset ominaisuudet
+    Tuotteen mitat ja yksikkötiedot.
+Valmistaja
+    Tuotteen valmistajan valinta.
+
+Kauppakohtaiset välilehdet
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Perustietojen alla olevat valikon välilehdet koskevat tuotteen
+kauppakohtaisten tietojen määrittämistä. Välilehtien nimet alkavat
+kyseessä olevan kaupan nimellä (aluksi: *Oletus*).
+
+Näkyvyys
+    Kauppakohtaiset tuotteen näkyvyysasetukset front-end –puolella.
+Ostaminen
+    Hinnoittelu-, toimittaja- ja moniostoasetukset.
+Toimitukset & Maksaminen
+    Toimitus- ja maksupalveluihin liittyvät asetukset (mahdollistaa
+    asiakkaalle tarjottavien toimitus- ja maksutapavaihtoehtojen
+    rajaamisen).
+
+Mediavälilehdet
+^^^^^^^^^^^^^^^
+
+Näissä osioissa voidaan määrittää tuotteeseen liittyvä kuva- ja
+mediasisältö.
+
+Tuotemedia
+    Upload-työkalu ja valitsin tuotteeseen liittyvälle medialle.
+Tuotekuvat
+    Upload-työkalu ja valitsin tuotekuville.
+
+.. tip::
+    Tarkennetut tuotemedia-asetukset mahdollistavat ladattavan
+    digitaalisen sisällön tarjoamisen verkkokaupassasi.
+
+Asiakasryhmäkohtaisen hinnoittelun välilehti
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Hinnoittelun määrittäminen asiakasryhmäkohtaisesti. Jos asiakas
+kuuluu useaan ryhmään, hänelle näytetään eri ryhmille määritetyistä
+hinnoista alin.
+
+.. note::
+   Asiakaskohtainen hinnoittelu ei toistaiseksi ole mahdollista
+   kauppakohtaisesti.
+
+Tallennettu Uusi tuote –lomake
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kun tuote on onnistuneesti tallennettu, tuotetietolomakkeeseen
+aukeaa lisää tuotteeseen liittyviä valintoja.
+
+Attribuutit-välilehti
+^^^^^^^^^^^^^^^^^^^^^
+
+Katso Attribuutit_.
+
+Varastonhallinta-välilehti
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Varastossa olevalle tuotteelle tulisi täällä olla saatavilla
+kaikki tarvittavat varaston hallintaan liittyvät valinnat
+riippuen tuotteen toimittajaan liittyvistä asetuksista.
 
 .. todo:: Add complete reference for product fields
 
-Orders Management Tab
-^^^^^^^^^^^^^^^^^^^^^
+Tilaukset -välilehti
+^^^^^^^^^^^^^^^^^^^^
 
-Show recent orders containing the product.
+Näytä viimeisimmät tilaukset jotka sisältävät tätä tuotetta.
 
-Product Types
--------------
+Tuotetyypit
+-----------
 
-Product Types define classes products and are used to associate different
-sets of attributes_ to a particular product, depending on its product type.
+Tuotetyypit määrittävät tuoteluokat ja niitä käytetään yhdistämään
+eri `attribuuttijoukkoja <attribuutit>`_ tiettyihin tuotteisiin
+tuotetyypin perusteella.
 
-For example, a product of type *Book* might require specific information
-such as author, ISBN, publisher, etc, while a product of type *Clothing*
-might require size, color, or other custom attributes.
+Esimerkiksi tuotetyyppi *Kirja* saattaa tarvita sille ominaisia
+tietoja, kuten kirjailija, ISBN, julkaisija ja niin edelleen.
+Vastaavasti tuotetyyppi *Vaate* saattaa tarvita tiedot koko,
+väri ja muita vain tälle tuotetyypille ominaisia attribuutteja.
 
-Attributes
-----------
+Attribuutit
+-----------
 
-Shop owners can define their own attributes for `Product Types`_ from the
-Attributes Admin.
+Kaupan omistaja voi määritellä tarvitsemansa attribuutit
+`tuotetyypeille <Tuotetyypit>`_ hallintapaneelin Attribuutit-kategoriasta.
 
-1. Select the `Attributes` category from the Shuup Admin menu
-2. Click the `New attribute` button in the upper right-hand corner
-3. Enter a name and **unique** identifer for the attribute, and select
-   the type, visibility mode, and searchability for the attribute
-4. Select the `Product Type` page (under the `Products` category) from
-   the Shuup Admin menu
-5. Select the Product Type from the menu
-6. Under the `Attributes` tab, check the box next to the attribute
-   name for your new attribute.
+1. Valitse `Attribuutit`-kategoria Shuup hallintapaneelin valikosta
+2. Valitse `Uusi attribuutti` näkymän oikeasta yläkulmasta
+3. Syötä nimi ja **yksilöllinen** tunniste attribuutille ja valitse
+   attribuutille tyyppi, näkyvyystila, ja haettavuus
+4. Siirry `Tuotetyyppi`-sivulle (`Tuotteet`-kategoriassa) Shuup
+   hallintapaneelin valikossa
+5. Valitse taulukosta tuotetyyppi
+6. Valitse `Attribuutit`-välilehti ja klikkaa rasti luomasi uuden
+   attribuutin nimen vieressä olevaan ruutuun
 
 .. tip::
-   By default, new attributes are displayed on the product page, but there
-   are multiple visibility options that can be selected form the Attributes
-   edit page.
+   Oletuksena uudet attribuutit näytetään tuotesivulla, mutta tätä
+   voidaan muuttaa useilla eri näkyvyysvalinnoilla attribuuttien
+   muokkaussivulla.
 
-Cross-Selling
+Ristiinmyynti
 -------------
 
-Adding Cross-Sells
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ristiinmyyntien lisääminen
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Related products can be sold together on Shuup's storefront by
-using Shuup's cross-selling feature. These relationships can be
-managed from the Shuup Product admin.
+Toisiinsa liittyviä tuotteita voidaan myydä yhdessä Shuup-verkkokaupassa
+käyttämällä Shuupin ristiinmyyntiominaisuutta. Ristiinmyyntisuhteita
+voidaan hallita Shuupin Tuotteet-ylläpidossa.
 
-To add a relationship for a particular product, navigate to the product's
-page and select `Manage Cross-Selling` from the `Actions` menu.
+Lisätäksesi ristiinmyyntisuhteen tuotteellesi, siirry tuotteen
+muokkaussivulle ja valitse `Hallinnoi ristiinmyyntiä` `Toiminnot`-valikosta.
 
 .. image:: products/action-menu.png
 
-Products can be selected by clicking the Browse button and clicking on
-the desired product from the product list.
+Tuotteet valitaan klikkaamalla `Hae`-painiketta ja valitsemalla
+haluttu tuote tuotelistalta.
 
 .. image:: products/cross-sells-add-relationship.png
 
-Once the product has been selected, the relationship's weight can be set.
+Kun tuote on valittu, ristiinmyyntisuhteen paino voidaan asettaa.
 
-The relationship weight is used when calculating which products will
-be displayed together on the shop front. The higher the relationship
-weight the more likely the products are to be displayed together.
+Ristiinmyyntisuhteen painoa käytetään kun lasketaan mitkä tuotteet
+näytetään verkkokaupassa yhdessä. Mitä suurempi arvo annetaan
+ristiinmyyntisuhteen painolle, sitä suuremmalla todennäköisyydellä
+valitut tuotteet näytetään yhdessä.
 
-Finally, you can select one of the following relationship types:
+Lopuksi voit valita yhden seuraavista ristiinmyyntisuhteen tyypeistä:
 
-Recommended
-   Products are recommended to be bought together.
-Related
-   Products are related.
-Computed
-   Primarily reserved for use by add-ons.
-Bought With
-   Primarily reserved for internal use. These relationships are
-   automatically calculated by automated Shuup tasks, however if
-   these tasks have not been configured by the server administrator,
-   they can be defined manually here.
+Suositeltu
+    Tuotteita suositellaan yhdessä ostettavaksi.
+Toisiinsa liittyvät
+    Tuotteet liittyvät toisiinsa.
+Laskettu
+    Suunniteltu ensisijaisesti verkkokaupan lisäosien kautta
+    käytettäväksi.
+Ostettu samalla
+    Suunniteltu ensisijaisesti sisäiseen käyttöön. Nämä
+    ristiinmyyntisuhteet lasketaan automaattisten Shuup taskien
+    avulla. Jos palvelimen ylläpitäjä ei ole määrittänyt näitä
+    taskeja, ne voidaan määrittää manuaalisesti täällä.
 
 .. note::
-   Only five relationships can be added at once. However, more can
-   be added once these relationships have been savd. This can be
-   repeated as necessary.
+    Enimmillään viisi ristiinmyyntisuhdetta voidaan määrittää
+    kerralla. Useampia ristiinmyyntisuhteita voidaan kuitenkin
+    määrittää, kun ensimmäiset suhteet on tallennettu. Tämä
+    voidaan tarvittaessa toistaa.
 
-Displaying Cross-Sells
-~~~~~~~~~~~~~~~~~~~~~~
+Ristiinmyyntien näkyvyys
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once defined in the Product admin, cross-sell relationships can be
-displayed on the store front using the Xtheme Cross-Sells plugin.
+Kun ristiinmyyntisuhteet on määritetty tuoteasetuksissa,
+ristiinmyynnit saadaan näkyviin verkkokaupassa käyttäen Xtheme
+Cross-Sells –liitännäistä.
 
 .. image:: products/cross-sells-displayed.png
 
-Follow the following steps to display a relationship type on the
-store front:
+Tee seuraavat toimenpiteet saadaksesi ristiinmyyntisuhteen
+näkyviin verkkokaupassasi:
 
-1.  Make sure you are logged in as an administrator and navigate to
-    the store front.
-2.  Navigate to any product page.
-3.  Click on the `Edit Page` button in the lower right-hand corner
-    of the page.
-4.  Select one of the Xtheme placeholder boxes.
-5.  Add a new row or new column for your plugin.
-6.  Select `Product Cross Sells` from the plugin dropdown menu.
-7.  Add a title if desired, select the relationship type, and set
-    the count as the number of products to be displayed at once.
-    You can also select whether or not to hide out-of-stock or
-    unorderable items.
-8.  Save the plugin.
-9.  Publish your changes.
-10. Click the `Exit Edit` button in the lower right-hand corner of
-    the page
-11. Your products should now appear in the placeholder on the product's
-    page.
+1. Varmista, että olet kirjautunut kauppaasi ylläpitäjänä ja
+   siirry verkkokauppasi etusivulle.
+2. Siirry verkkokaupassasi mille tahansa tuotesivulle.
+3. Valitse `Muokkaa Sivua` sivun oikeasta alalaidasta.
+4. Valitse yksi Xtheme placeholder –laatikoista.
+5. Lisää uusi rivi tai sarake liitännäisellesi.
+6. Valitse `Tuotteiden ristiinmyynnit` liitännäisen pudotusvalikosta.
+7. Lisää halutessasi otsikko, valitse ristiinmyyntisuhteen tyyppi
+   ja valitse kerralla näytettävien tuotteiden määrä. Voit myös
+   valita, haluatko näyttää vai piilottaa tuotteet, joita ei ole
+   varastossa tai jotka eivät muutoin ole tilattavissa.
+8. Tallenna liitännäinen.
+9. Julkaise muutokset.
+10. Klikkaa `Poistu muokkauksesta` -painiketta sivun oikeasta alalaidasta.
+11. Ristiinmyytävien tuotteittesi pitäisi nyt tulla näkyviin tuotesivulla.
 
 .. The page will now enter an editable draft mode and depending on the
    theme template settings, dashed Xtheme placeholder boxes should become
    visible on the page. These may be empty boxes by default.
 
 .. note::
-   Cross-sell relationships are only one-way and must be manually added
-   to any related product you would like to relate back to the original
-   product.
+   Ristiinmyyntisuhteet ovat yksisuuntaisia ja suhde tulee manuaalisesti
+   lisätä ristiinmyytäviin tuotteisiin, jotka haluat saada näyttämään
+   alkuperäisen tuotteen omana ristiinmyyntituotteenaan.
 
 .. note::
-   If there are no relationships of the selected type for a particular
-   product, the plugin will not be displayed.
+   Jos tuotteelle ei ole määritetty valitun tyypin ristiinmyyntisuhteita,
+   liitännäinen ei ole näkyvissä tuotesivulla.
 
-Package Products
-----------------
+Pakettituotteet
+---------------
 
 Package products are used to package a number of related products to be
 sold as a single product package.
@@ -263,62 +271,65 @@ To convert a product to a package parent:
 3. Click `Save` to save the package's child product informatino.
 
 
-Variation Products
-------------------
+Variaatiotuotteet
+-----------------
 
-Some products may be available to customers in a number of different
-variations, and customers should be able to choose from these
-different available options when adding products to their cart.
+Joitakin tuotteita saatetaan haluta tarjota asiakkaille useana eri
+variaationa ja asiakkaan tulee pystyä tekemään valinta eri
+vaihtoehtojen välillä lisätessään tuotteen ostoskoriin.
 
-Shuup provides two different types of product variations, `simple
-variations` and `variable variations`.
+Shuup mahdollistaa kaksi erilaista tuotevariaatiotyyppiä;
+yksinkertaiset variaatiot ja muuttujavariaatiot.
 
-Simple Variations
-~~~~~~~~~~~~~~~~~
+Yksinkertaiset variaatiot
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Simple variations are general variations that are displayed on the
-product page as a simple drop-down menu where the user can select
-from any of the available variation product choices.
+Yksinkertaiset variaatiot ovat yleisiä variaatioita, jotka näytetään
+tuotesivulla yksinkertaisena pudotusvalikkona, josta asiakas
+voi valita haluamansa variaatiotuotteen.
 
-Variable Variations
-~~~~~~~~~~~~~~~~~~~
+Muuttujavariaatiot
+~~~~~~~~~~~~~~~~~~
 
-Variable variations allow you to define child products based on a
-specific variable. For example, a product might have variables such as
-`size` or `colors`, with different options for each, and the customer
-should be able to select from a combination of these options.
+Muuttujavariaatiot mahdollistavat ”lapsituotteen” määrittämisen eri
+muuttujien avulla. Tuotteesi saattaa tarvita esimerkiksi muuttujat
+`koko` ja `väri`, joista kummallekin on useita mahdollisia arvoja
+ja asiakkaan on pystyttävä valitsemaan näille mikä tahansa
+mahdollinen yhdistelmä.
 
-To add variable variations:
+Lisätäksesi muuttujavariaatioita:
 
-1. Navigate to the parent product's edit page and select `Convert to
-   Variation Parent` from the `Actions` menu.
-2. Select `Variables` from the left-hand menu
-3. Click `Add new variable` to add a new variable form
-4. Enter the variable name
-5. Click `Add new value`
-6. Enter names for possible values
-7. Continue for other variables/values as needed
-8. When finished, click `Save` in the toolbar
+1. Siirry tuotteen muokkaussivulle ja valitse
+   `Muunna variaatioisännäksi` `Toiminnot`-valikosta
+2. Valitse `Muuttujat` vasemman reunan valikosta
+3. Valitse `Lisää uusi muuttuja` lisätäksesi uuden muuttujalomakkeen
+4. Anna muuttujalle nimi
+5. Valitse `Lisää uusi arvo`
+6. Anna nimet mahdollisille arvoille
+7. Jatka muihin muuttujiin/arvoihin tarpeen mukaan
+8. Kun valmista, tallenna valinnat työkalupalkin painikkeesta
 
 .. image:: products/variable-product-selector.png
 
-Once these variables have been added, "child" products can be linked
-for each combination of variables. For example, if there are 3 `size`
-values and 2 `color` values, there will be 6 child products, one for
-each `size`, `color` combination.
+Kun muuttujat on lisätty, ”lapsituotteet” voidaan linkittää kaikille
+muuttujien yhdistelmille. Esimerkiksi 3 `koko`-muuttujan arvoa ja 2
+`väri`-muuttujan arvoa eri yhdistelmineen muodostaa 6 mahdollista
+”lapsituotetta”.
 
 .. tip::
-   Names for child products should follow a consistent naming scheme
-   indicating the variable value for each product.
+   Lapsituotteiden nimien tulisi noudattaa johdonmukaista kaavaa,
+   joka osoittaa muuttujan arvon jokaiselle tuotteelle.
 
 .. tip::
-   Variable variations can be converted to simple variations
-   by clicking `Convert to simple variation` on the Variation view
-   toolbar. However, all variable and value information will be lost.
+   Muuttujavariaatiot voidaan muuttaa yksinkertaisiksi variaatioiksi
+   valitsemalla `Konvertoi yksinkertaiseksi muuttujaksi`
+   Variaatio-näkymän työkalupalkista. Huomioi kuitenkin, että näin
+   tehtäessä kaikki asetetut muuttujat ja arvot menetetään.
 
-Managing Variations
-~~~~~~~~~~~~~~~~~~~
-Once a product has been converted to a simple or variable variation
-parent, it can be managed by selecting `Manage Variations` from the
-`Actions` menu for either the variation parent's admin page or the
-admin page for any of the child variation products.
+Variaatioiden hallinta
+~~~~~~~~~~~~~~~~~~~~~~
+
+Kun tuote on muunnettu ”variaatioisännäksi” (yksinkertainen variaatio
+tai muuttujavariaatio), sen ominaisuuksia voidaan hallita valitsemalla
+`Hallitse variaatioita` `Toiminnot`-valikosta ”variaatioisännän”
+ylläpitosivulta tai minkä tahansa ”lapsituotevariaation” ylläpitosivulta.

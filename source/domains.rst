@@ -1,4 +1,4 @@
-Domains
-=======
+Verkkotunnukset
+===============
 
-Feature coming soon!
+Tämä ominaisuus on tulossa pian!

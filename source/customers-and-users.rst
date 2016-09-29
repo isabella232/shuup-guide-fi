@@ -1,167 +1,169 @@
-Customers and Users
-===================
+Asiakkaat ja käyttäjät
+======================
 
-Users
-~~~~~
+Käyttäjät
+~~~~~~~~~
 
-Creating a User
-^^^^^^^^^^^^^^^
+Käyttäjän luominen
+^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu.
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikossa.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Click the `New User` button on the Users admin toolbar.
+2. Valitse `Uusi käyttäjä` Käyttäjät-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/new-user-button.png
 
-3. Enter a valid username and password for the user as well as any
-   other user information, then click the `Save` button in the
-   to create the user account.
+3. Syötä kelvollinen käyttäjänimi ja salasana sekä muut
+   käyttäjätiedot. Valitse lopuksi `Tallenna` luodaksesi
+   käyttäjätilin.
 
    .. image:: customers-and-users/new-user.png
 
 .. note::
-   A user won't automatically receive notice that an account has been
-   created for them.
+   Uusi käyttäjä ei automaattisesti saa ilmoitusta hänelle luodusta
+   käyttäjätilistä.
+   
+   Mikäli haluat lähettää uudelle käyttäjälle ilmoituksen, voit
+   lähettää hänelle salasanan palautussähköpostin.
+   
 
-   Instead, if you would like to notify a user, send a password-reset
-   email.
+   Katso `Salasanan palautussähköpostin lähettäminen`_.
 
-   See `Sending Password-Reset Emails`_.
+Käyttäjän luominen tallennetusta kontaktista
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating a User From a Saved Contact
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikossa.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Select the contact for which you want to create a user account.
+2. Valitse kontakti, jolle haluat luoda käyttäjätilin.
 
    .. image:: customers-and-users/select-contact.png
 
-3. Click the `New User` button on the Contact admin toolbar.
+3. Valitse `Uusi käyttäjä` Kontaktit-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/new-user-from-contact.png
 
-4. Enter the new user's username and password information and click
-   `Save` to create the user account, which will now be associated with
-   the selected contact information.
+4. Syötä uuden käyttäjän käyttäjänimi ja salasana ja valitse
+   `Tallenna` luodaksesi käyttäjätilin, joka yhdistetään valitun
+   kontaktin tietoihin.
 
    .. image:: customers-and-users/new-user.png
 
 
-   See `Creating a User` for more information.
+   Katso lisätiedot kohdasta `Käyttäjän luominen`.
 
-Managing User Passwords
-^^^^^^^^^^^^^^^^^^^^^^^
+Käyttäjien salasanojen hallinnointi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Changing User Passwords
-***********************
+Käyttäjien salasanojen vaihtaminen
+**********************************
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Select the user whose password you want to change.
+2. Valitse käyttäjä, jonka salasanan haluat vaihtaa.
 
    .. image:: customers-and-users/select-user.png
 
-3. Click the `Actions` button on the user admin toolbar, and select
-   `Change Password` from the dropdown menu.
+3. Valitse Käyttäjät-ylläpitosivun työkalupalkin `Toiminnot`
+   -pudotusvalikosta `Vaihda salasana`.
 
    .. image:: customers-and-users/change-password.png
 
-4. Enter the new password in the `Change User Password` form and
-   click `Save` in the toolbar to save the new password.
+4. Syötä uusi salasana `Vaihda käyttäjän salasana` –lomakkeelle ja
+   valitse `Tallenna` tallentaaksesi uuden salasanan.
 
    .. image:: customers-and-users/change-password-form.png
 
-Sending Password-Reset Emails
-*****************************
+Salasanan palautussähköpostin lähettäminen
+******************************************
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu.
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Select the user whose password you want to change.
+2. Valitse käyttäjä, jolle haluat lähettää salasanan
+   palautussähköpostin.
 
    .. image:: customers-and-users/select-user.png
 
-3. Click the `Actions` button on the user admin toolbar, and select
-   `Send Password Reset Email` from the dropdown menu.
+3. Valitse Käyttäjät-ylläpitosivun työkalupalkin `Toiminnot`
+   -pudotusvalikosta `Lähetä salasanan palautussähköposti`.
 
    .. image:: customers-and-users/send-password-reset-email.png
 
-4. On the next screen, click `Send Reset Email` to send the user a
-   password reset email.
+4. Seuraavalla ruudulla, valitse `Lähetä palautussähköposti`
+   lähettääksesi käyttäjälle palautussähköpostin.
 
    .. image:: customers-and-users/send-reset-email.png
 
-Editing User Permissions
-^^^^^^^^^^^^^^^^^^^^^^^^
+Käyttäjäoikeuksien muokkaaminen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
 
-   Use caution when granting users administrative permissions.
+   Anna hallinnoivia käyttäjäoikeuksia käyttäjille harkiten.
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu.
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Select the user whose permissions you want to edit.
+2. Valitse käyttäjä, jonka käyttäjäoikeuksia haluat muokata.
 
    .. image:: customers-and-users/select-user.png
 
-3. Click the `Actions` button on the user admin toolbar, and select
-   `Edit Permissions` from the dropdown menu.
+3. Valitse Käyttäjät-ylläpitosivun työkalupalkin `Toiminnot`
+   -pudotusvalikosta `Muokkaa oikeuksia`.
 
    .. image:: customers-and-users/edit-permissions.png
 
-4. Check the permission levels that want to grant the user and click
-   the `Save` button to save the user's permissions.
+4. Rastita ruudut niiden käyttäjäoikeustasojen kohdalta, jotka
+   haluat käyttäjälle antaa ja lopuksi valitse `Tallenna` tallentaaksesi valinnat.
 
    .. image:: customers-and-users/change-permissions.png
 
-Deactivating a User
-^^^^^^^^^^^^^^^^^^^
+Käyttäjän deaktivointi
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-When users are deactivated, they remain in your system however they
-will no longer be able to log in to their account and by default are
-not displayed when first opening the Users admin page.
+Kun käyttäjä deaktivoidaan, käyttäjä jää järjestelmääsi, mutta hän
+ei enää pysty kirjautumaan käyttäjätiliinsä, eikä käyttäjää näytetä
+oletuksena avatessasi Käyttäjät-ylläpitosivun.
 
 .. note::
-   If a user has an associated contact, deactiving the user's user
-   account will not deactive their contact, although it will prevent
-   them from logging in, essentially accomplishing the same thing.
+   Jos käyttäjällä on liitetty kontakti, käyttäjän käyttäjätilin
+   deaktivointi ei deaktivoi liitettyä kontaktia, mutta estää
+   sisäänkirjautumisen, joka käytännössä tarkoittaa samaa asiaa..
 
-   See `Deactivating a Contact`_ for more information.
+   Lisätietoja aiheesta kohdassa `Kontaktin deaktivointi`_.
 
-To deactivate a user:
+Deaktivoidaksesi käyttäjän:
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu.
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Select the user you want to deactivate.
+2. Valitse käyttäjä, jonka käyttäjätilin haluat deaktivoida.
 
    .. image:: customers-and-users/select-user.png
 
-3. Click the `Deactivate User` button on the user admin toolbar.
+3. Valitse `Deaktivoi käyttäjä` Käyttäjät-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/deactivate-user-button.png
 
-4. The user will now be deactivated, and the `Deactivate User` button
-   will be replaced with an `Activate User` button.
+4. Käyttäjä on nyt deaktivoitu ja `Deaktivoi käyttäjä` –painike
+   korvataan `Aktivoi käyttäjä` –painikkeella.
 
-.. note:: The same steps can be followed to activate a deactivated user.
+.. note:: Seuraa samoja ohjeita aktivoidaksesi deaktivoidun käyttäjän.
 
 Logging in as a User
 ^^^^^^^^^^^^^^^^^^^^
@@ -228,308 +230,318 @@ Creating a Permission Group
 
 4. Click `Save` to save the permission group settings.
 
-Contacts
-~~~~~~~~
+Kontaktit
+~~~~~~~~~
 
-Shuup contacts store contact information such as address data, email, or
-phone numbers, and a contact may or may not be associated with a
-user account.
+Shuup Kontaktit varastoivat kontaktitiedot, kuten osoitetiedot,
+sähköpostiosoitteet sekä puhelinnumerot, ja kontakti voi olla
+(tai olla olematta) liitetty käyttäjätiliin.
 
-Contacts may be one of the two following types:
+Kontakti voi olla tyypiltään toinen seuraavista:
 
-Person contact
-   Contact associated with a person.
-Company contact
-   Contact associated with a company.
+Henkilökontakti
+    Henkilöön liittyvä kontakti.
+Yrityskontakti
+    Yritykseen liittyvä kontakti.
 
-One or more person contacts may be *members* of a company contact.
 
-However, if a user has a contact associated with their account, it must
-always be a *person*-type contact, which may then be a member of one or
-more *company* contacts.
+Yksi tai useampi henkilökontakti voi olla yrityskontaktin **jäsen**.
 
-If a user's person contact is linked to a company, the company's contact
-information will be used when placing orders.
+Kuitenkin, jos käyttäjällä on käyttäjätiliinsä liitetty kontakti,
+sen on aina oltava **henkilökontakti**, joka voi edelleen olla
+yhden tai useamman **yrityskontaktin** jäsen.
+	
+Jos käyttäjään liitetty **henkilökontakti** on **yrityskontaktin**
+**jäsen**, tilausta tehdessä käytetään yrityksen yhteystietoja.
 
-Creating a Contact
+
+Kontaktin luominen
 ^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Click the `New contact` button on the Contacts admin toolbar.
+2. Valitse `Uusi kontakti` Kontaktit-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/new-contact-button.png
 
-3. Enter all basic details for the contact, including any required
-   fields.
+3. Syötä kontaktin perustiedot ja varmista, että vaaditut kentät on
+   täytetty.
 
    .. image:: customers-and-users/contact-basic-details.png
 
    .. note::
 
-      If adding a contact of type *Person*, the `Name` field is required
-      but unused. Instead, you will want to enter a temporary value into
-      the `name` field and (optionally) provide the contact's first name
-      last name.
+      Jos olet lisäämässä `Henkilökontaktia`, `Nimi`-kenttä on
+      vaadittu, mutta ei käytössä. Sinun kannattaakin syöttää
+      tilapäinen arvo `Nimi`-kenttään ja (vaihtoehtoisesti) syöttää
+      kontaktin etu- ja sukunimi niille tarkoitettuihin kenttiin.
 
-      If adding a contact of type *Company*, the `Name` field is
-      required and will be used as the company name. In this case, the
-      first and last names will not be used.
+      Jos olet lisäämässä `Yrityskontaktia`, `Nimi`-kenttä on
+      vaadittu ja siihen syötettyä nimeä käytetään yrityksen
+      nimenä. Tässä tapauksessa etu- ja sukunimikenttiin
+      syötettyjä tietoja ei käytetä.
 
-4. Click the `Addresses` tabs on the left-hand side of the screen to
-   enter billing and shipping address information for the contact.
+4. Valitse `Osoitteet`-välilehti sivun vasemman laidan valikosta
+   syöttääksesi kontaktille laskutus- ja toimitusosoitteet.
 
    .. image:: customers-and-users/contact-addresses.png
 
-5. Click the `Save` button to create the contact.
+5. Valitse `Tallenna` luodaksesi kontaktin.
 
-Editing a Contact
-^^^^^^^^^^^^^^^^^
+Kontaktin muokkaaminen
+^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Select the contact that you want to edit.
+2. Valitse kontakti, jota haluat muokata.
 
    .. image:: customers-and-users/select-contact.png
 
-3. Click the `Edit` button in the contact admin toolbar.
+3. Valitse `Muokkaa` Kontaktit-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/edit-contact.png
 
-3. Edit the user's information and click `Save` to save the contact's
-   information.
+4. Muokkaa kontaktin tietoja haluamallasi tavalla ja lopuksi
+   valitse `Tallenna` tallentaaksesi muutokset.
 
-   See `Creating a Contact`_ for more information.
+   Lisätietoja kohdassa `Kontaktin luominen`_.
 
-Editing Company Membership
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Yrityksen jäsenyyden muokkaaminen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Select the company contact whose membership you want to edit.
+2. Valitse yritys, jonka jäsenyyksiä haluat muokata.
 
    .. image:: customers-and-users/select-company.png
 
-3. Click the `Edit` button in the contact admin toolbar.
+3. Valitse `Muokkaa` Kontaktit-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/edit-contact.png
 
-4. Under the `Members` field input, type the name of the person contact
-   you wish to add to the company. When the name appears in the
-   dropdown, click to add to the input field.
+4. Syötä `Jäsenet`-kenttään sen henkilökontaktin nimi, jonka haluat
+   liittää yritykseen. Kun haluttu nimi tulee näkyviin
+   pudotusvalikossa, klikkaa nimeä lisätäksesi sen kenttään.
 
    .. image:: customers-and-users/company-membership.png
 
-5. Click save to update the company's memberships.
+5. Valitse `Tallenna` päivittääksesi valinnat yrityksen jäsenyyksiin.
 
-Creating a Contact From a User Account
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Kontaktin luominen käyttäjätilin avulla
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Users admin page by clicking `Users` under the
-   `Settings` category from the Shuup Admin menu.
+1. Siirry Käyttäjät-ylläpitosivulle valitsemalla `Käyttäjät`
+   Kontaktit-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/users-menu.png
 
-2. Select the user whose permissions you want to edit.
+2. Valitse käyttäjä, jolle haluat lisätä kontaktitiedot.
 
    .. image:: customers-and-users/select-user.png
 
-3. Click the `Actions` button on the user admin toolbar, and select
-   `Create Contact` from the dropdown menu.
+3. Valitse Käyttäjät-ylläpitosivun työkalupalkin `Toiminnot`
+   -pudotusvalikosta `Luo kontakti`.
 
    .. image:: customers-and-users/new-contact-from-user.png
 
-4. Fill in the user's contact information, including any required
-   fields, then save to create a saved contact for the user.
+4. Syötä kenttiin käyttäjän kontaktitiedot varmistaen, että
+   pakolliset kentät on täytetty, ja lopuksi valitse `Tallenna`
+   luodaksesi kontaktitiedot käyttäjälle.
 
    .. image:: customers-and-users/contact-basic-details.png
 
-   See `Creating a Contact`_ for more information.
+   Lisätietoja kohdassa `Kontaktin luominen`_.
 
-5. The contact will now be created and you will be taken to the new
-   contact's admin page.
+5. Kontakti on nyt luotu ja sinut ohjataan uuden kontaktin
+   ylläpitosivulle.
 
-   Click the user's username to go back to the user's admin page.
-
-Deactivating a Contact
+   Klikkaa käyttäjän käyttäjänimeä päästäksesi takaisin käyttäjän
+   ylläpitosivulle.
+   
+Kontaktin deaktivointi
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When contacts are deactivated, they remain in your system however they
-will no longer be able to log in to their account and by default are
-not displayed when first opening the Contacts admin page.
+Kun kontakti deaktivoidaan, kontakti jää järjestelmääsi, mutta hän
+ei enää pysty kirjautumaan tiliinsä, eikä kontaktia näytetä
+oletuksena avatessasi Kontaktit-ylläpitosivun.
 
 .. note::
-   If a contact has an associated user, deactiving the user's contact
-   will not deactive their user account, although it will prevent them
-   from logging in, essentially accomplishing the same thing.
+   Jos kontakti on liitetty käyttäjään, käyttäjän kontaktitietojen
+   deaktivointi ei deaktivoi liitettyä käyttäjätiliä, mutta estää
+   sisäänkirjautumisen, joka käytännössä tarkoittaa samaa asiaa.
 
-   See `Deactivating a User`_ for more information.
+   Lisätietoja kohdassa `Käyttäjän deaktivointi`_.
 
-To deactivate a contact:
+Deaktivoidaksesi kontaktin:
 
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit-kategoriasta` Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Select the contact you want to deactivate.
+2. Valitse kontakti, jonka haluat deaktivoida.
 
    .. image:: customers-and-users/select-contact.png
 
-3. Click the `Deactivate Contact` button on the contact admin toolbar.
+3. Valitse `Deaktivoi kontakti` Kontaktit-ylläpitosivun
+   työkalupalkista.
 
    .. image:: customers-and-users/deactivate-contact-button.png
 
-4. The contact will now be deactivated, and the `Deactivate Contact`
-   button will be replaced with an `Activate Contact` button.
+4. Kontakti on nyt deaktivoitu ja `Deaktivoi kontakti` –painike
+   korvataan `Aktivoi kontakti` –painikkeella.
 
 .. note::
-   The same steps can be followed to activate a deactivated
-   contact.
+   Seuraa samoja ohjeita aktivoidaksesi deaktivoidun kontaktin.
 
-Contact Groups
+Kontaktiryhmät
 ~~~~~~~~~~~~~~
 
-In Shuup, contacts can be placed into different contact groups. These
-groups can then be targetted for campaigns, discount pricing, or custom
-behaviors.
+Shuupissa kontaktit voidaan sijoittaa eri kontaktiryhmiin. Näille
+ryhmille voidaan kohdistaa kampanjoita, alennushinnoittelua tai
+mukautettuja käyttäytymiskomponentteja.
 
 .. Add information about default groups
 
-Creating a Contact Group
+Kontaktiryhmän luominen
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Contact Groups admin page by clicking `Contact
-   Groups` under the `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktiryhmät-ylläpitosivulle valitsemalla
+   `Kontaktiryhmät` `Kontaktit`-kategoriasta Shuup
+   hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Click the `Create new` button in the Contact Groups toolbar.
-
+2. Valitse `Luo uusi` Kontaktiryhmät-ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/new-contact-group-button.png
 
-3. Select a name and price-display mode for your contact group.
+3. Valitse `nimi` ja `hintojen näyttötapa` uudelle kontaktiryhmälle.
 
    .. image:: customers-and-users/contact-group-information.png
 
-4. Click the `Save` button to save your contact group
+4. Valitse `Tallenna` tallentaaksesi uuden kontaktiryhmän.
 
-   Once the contact group has been saved, two new tabs will be
-   automatically added to the group's admin page--a `Members` tab
-   and one or more `Sales Range` tabs.
+   Kun kontaktiryhmä on tallennettu, kontaktiryhmän ylläpitosivulle
+   ilmestyy automaattisesti kaksi uutta välilehteä;
+   `Jäsenet-välilehti` ja yksi tai useampia `Myyntirajat`-välilehteä.
 
-Editing Group Membership
-^^^^^^^^^^^^^^^^^^^^^^^^
+Ryhmien jäsenyyksien muokkaaminen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-View Contact Group Membership
+Näytä kontaktiryhmän jäsenyys
 *****************************
 
-Adding a Contact
-****************
+Kontaktin lisääminen
+********************
 
-1. Navigate to the Contact Groups admin page by clicking `Contact
-   Groups` under the `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktiryhmät-ylläpitosivulle valitsemalla `Kontaktiryhmät`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contact-groups-menu.png
 
-2. Select the contact group whose membership you want to edit.
+2. Valitse kontaktiryhmä, jonka jäsenyyksiä haluat muokata.
 
    .. image:: customers-and-users/select-contact-group.png
 
-3. Click the `Add Members` tab on the left-hand side of the screen.
+3. Valitse `Lisää jäseniä`-välilehteä sivun vasemman laidan valikosta.
 
    .. image:: customers-and-users/add-members-tab.png
 
-4. Click the `Select` button on an empty row to launch the Contact
-   selector popup.
+4. Klikkaa tyhjällä rivillä olevaa `Valitse`-painiketta avataksesi
+   kontaktin valintaikkunan.
 
    .. image:: customers-and-users/add-members-select-button.png
 
-5. Select the contact you want to add from the Contact popup selector.
+5. Valitse kontakti, jonka haluat lisätä kontaktiryhmään.
 
    .. image:: customers-and-users/select-member.png
 
-5. If there are no blank contact rows, click the `Add more` button to
-   add a blank contact row.
+6. Jos näkymässä ei ole tyhjiä kontaktirivejä, valitse `Lisää uusia`
+   lisätäksesi tyhjiä kontaktirivejä.
 
    .. image:: customers-and-users/add-more-button.png
 
-6. Repeat as necessary to add more contacts, then click `Save` to save
-   the contact group.
+7. Toista tarvittaessa lisätäksesi lisää kontakteja ja valitse lopuksi
+   `Tallenna` tallentaaksesi kontaktiryhmän.
 
-Removing a Contact
-******************
+Kontaktin poistaminen
+*********************
 
 .. note::
-   Contacts can only be removed from a contact group via the
-   admin page for each contact you wish to remove.
+   Kontakteja voidaan poistaa kontaktiryhmistä ainoastaan poistettavan
+   kontaktin omalta ylläpitosivulta.
 
-1. Navigate to the Contacts admin page by clicking `Contacts` under the
-   `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktit-ylläpitosivulle valitsemalla `Kontaktit`
+   `Kontaktit`-kategoriasta Shuup hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contacts-menu.png
 
-2. Select the contact that you want to remove from your group.
+2. Valitse kontakti, jonka haluat poistaa kontaktiryhmästä.
 
    .. image:: customers-and-users/select-contact.png
 
-3. Click the `Edit` button in the contact admin toolbar.
+3. Valitse `Muokkaa` kontaktin ylläpitosivun työkalupalkista.
 
    .. image:: customers-and-users/edit-contact-group-from-contact.png
 
-4. Find the contact group whose membership you wish to edit in the
-   `Contact Groups` list, uncheck the corresponding box, and click
-   `Save` to update the contact's group membership.
+4. Etsi kontaktiryhmä, jonka jäsenyyttä haluat muokata
+   `Kontaktiryhmät`-listasta, poista rasti ryhmän nimen vierellä
+   olevasta ruudusta ja valitse `Tallenna` päivittääksesi
+   kontaktilistan jäsenyydet.
 
-Creating a Sales Range
+Myyntirajojen luominen
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Contact group *sales ranges* can be used to automatically assign
-customer contacts to contact groups based on their sales totals.
+Kontaktiryhmien `Myyntirajoja` voidaan käyttää asiakaskontaktien
+automaattiseen lisäämiseen haluttuihin kontaktiryhmiin heidän
+tekemien ostosten kokonaisarvon perusteella.
 
-This can be useful if you want to target different sales levels for
-special campaigns, or offer special discounts or promotions.
+Tämä voi olla hyödyllistä, jos haluat kohdistaa erityisiä
+kampanjoita ja tarjota alennuksia tai etuja myyntitason mukaan.
 
-1. Navigate to the Contact Groups admin page by clicking `Contact
-   Groups` under the `Contacts` category from the Shuup Admin menu.
+1. Siirry Kontaktiryhmät-ylläpitosivulle valitsemalla
+   `Kontaktiryhmät` `Kontaktit`-kategoriasta Shuup
+   hallintapaneelin valikosta.
 
    .. image:: customers-and-users/contact-groups-menu.png
 
-2. Select the contact group to which you want to add a sales range.
+2. Valitse kontaktiryhmä, jolle haluat lisätä myyntirajoja.
 
    .. image:: customers-and-users/select-contact-group.png
 
-3. Click the `(Shop Name) - Sales Ranges` tab on the left-hand side of
-   the screen, where `(Shop Name)` is the name of the shop to associate
-   with the sales range.
+3. Valitse `(Kaupan nimi) – Myyntirajat` –välilehti sivun vasemman
+   laidan valikosta, missä `(Kaupan nimi)` on sen kaupan nimi,
+   joka liitetään uusiin myyntirajoihin.
 
    .. image:: customers-and-users/sales-ranges-tab.png
 
-4. Enter a minimum and maximum value for the group's sales range.
+4. Syötä alin ja ylin arvo kontaktiryhmän myyntirajoille.
 
    .. image:: customers-and-users/sales-ranges-values.png
 
    .. note::
 
-      Leave the maximum value blank to set no maximum for the group.
-
-      Set the minimum value to 0 to set no minimum for the group.
-
-5. Click `Save` to save the contact group sales range. Contact group
-   membership will automatically update based on customers' sales
-   totals.
+      Jätä `Ylin arvo` –kenttä tyhjäksi jos et halua asettaa
+      ryhmälle myynnin ylärajaa.
+      
+      Jätä `Alin arvo` –kenttä tyhjäksi jos et halua asettaa
+      ryhmälle myynnin alarajaa.
+      
+5. Valitse `Tallenna` tallentaaksesi ryhmän myyntirajat.
+   Kontaktiryhmän jäsenyys päivittyy automaattisesti perustuen
+   asiakkaiden kokonaismyyntiin.
 
 
 .. tip::
-   Try creating a contact group for customers within a sales range
-   value and target them for special discounts and promotions.
+   Koita kontaktiryhmän luomista asiakkaille myyntirajoihin
+   perustuen ja tarjoa heille erityisiä alennuksia ja etuja.

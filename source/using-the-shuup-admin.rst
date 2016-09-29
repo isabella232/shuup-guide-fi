@@ -1,27 +1,31 @@
-Using the Shuup Admin
-=====================
+Shuup hallintapaneelin käyttö
+=============================
 
-Navigating the Admin Menu
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Navigointi hallintapaneelin valikossa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Shuup Admin menu contains a list of categories. Each category can
-contain one or more links to admin pages for specific sections.
+Shuupin hallintapaneelin valikko sisältää listan kategorioista.
+Kukin kategoria sisältää yhden tai useamman linkin aihekohtaisille
+hallintasivuille.
 
-If there is only one option for a category, clicking the category name
-will automatically open that page. If there are multiple options,
-clicking the name will expand the category to show all options.
+Jos kategoria sisältää vain yhden mahdollisen valinnan, kategorian
+klikkaaminen ohjaa automaattisesti kyseiselle sivulle. Jos kategoria
+sisältää useamman mahdollisen valinnan, klikkaaminen avaa
+kategoriaan kuuluvat valinnat näkyviin.
 
-Sorting and Filtering Tables
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Taulukoiden uudelleenjärjestäminen ja suodattimet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Different pages in the Shuup Admin may contain a table of different
-items (such as customers, orders, or products). Rows within this table
-may be sortable or filterable, depending on the section.
+Osa Shuup hallintapaneelin sivuista sisältää eri nimikkeitä sisältäviä
+taulukoita (kuten asiakkaita, tilauksia tai tuotteita).
+Osiosta riippuen, joidenkin taulukoiden rivit on mahdollista
+järjestää uudelleen tai suodattaa.
 
-If a column is sortable, you will be able to change the sorting behavior
-(unsorted, alphabetical, or reverse alphabetical) by clicking the name
-of the column.
+Jos sarake on mahdollista järjestää uudelleen, järjestämisperusteen
+(järjestämätön, aakkosjärjestys tai käänteinen aakkosjärjestys) voi
+vaihtaa klikkaamalla sarakkeen otsikkoa.
 
-If a column is filterable, a text box or other filter fields will be
-available to adjust the filters. Rows that do not match the filter will
-not be displayed.
+Jos sarakkeessa on mahdollista käyttää suodatinta, on taulukon ohessa
+tekstikenttä tai muu suodatinkenttä, jolla käytettävä suodatin voidaan
+valita. Kun suodatin on valittu, rivit, jotka eivät vastaa suodattimen
+valintaa eivät näy taulukossa.

@@ -1,161 +1,164 @@
-Payment and Shipping
-====================
+Maksaminen ja toimitukset
+=========================
 
-In Shuup, payment and shippings choices are associated with particular
-service providers. These may be provided by Shuup's build-in carriers
-or payment process, or may be provided by payment or shipping-related
-addons.
+Shuupissa maksu- ja toimitustapoihin liittyvät valinnat ovat
+yhteydessä valikoituihin palveluntarjoajiin. Palveluntarjoajat
+voivat olla Shuupin sisäänrakennettuja toimitus- ja maksutapoja
+tai ulkopuolisia toimitus- ja maksutapoja, jotka voidaan liittää
+Shuupiin liitännäisenä.
 
-Service Providers
+Palveluntarjoajat
 ~~~~~~~~~~~~~~~~~
 
-Creating a Payment/Service Provider
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Maksu- tai toimituspalvelun tarjoajan luominen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Service Providers admin page by clicking `Service
-   Providers` under the `Settings` category from the Shuup Admin menu.
+1. Siirry `Palveluntarjoajat`-ylläpitosivulle valitsemalla
+   `Palveluntarjoajat` `Maksaminen ja toimitus` –kategoriasta
+   Shuup hallintapaneelin valikossa.
 
    .. image:: payment-and-shipping/service-providers-menu.png
 
-2. Click the `New service provider` button in the Service Providers
-   admin toolbar
+2. Valitse `Uusi palveluntarjoaja` `Palveluntarjoajat`
+   -ylläpitosivun työkalupalkista.
 
    .. image:: payment-and-shipping/new-service-provider-button.png
 
-3. Select the provider *type* from the dropdown.
+3. Valitse palveluntarjoajan *Tyyppi* pudotusvalikosta.
 
    .. image:: payment-and-shipping/new-service-provider.png
 
    .. note::
-      Some classes of providers may require extra fields. If so, these
-      should appear when you select the provider from the dropdown.
+      Osa palveluntarjoajaluokista edellyttää lisäkenttien täyttämistä.
+      Kun valitset jonkun näistä luokista, vaaditut lisäkentät tulevat
+      automaattisesti näkyviin.
 
-4. Enter the name, logo, enabled status, and any additional fields.
+4. Syötä `nimi`, `logo`, `käytössä`-status ja täytä mahdolliset lisäkentät.
 
    .. image:: payment-and-shipping/new-carrier.png
 
-5. Click `Save` to create the service provider.
+5. Valitse `Tallenna` vahvistaaksesi palveluntarjoajan luomisen.
 
+6. Kun olet tallentanut, valitse `Luo maksutapa` tai `Luo toimitustapa`
+   luodaksesi maksu- tai toimitustavan, joka on yhteydessä tähän
+   maksupalvelun tarjoajaan.
 
-6. Once saved, click `Create payment method` or `Create shipping method`
-   to create a payment or shipping method associated with this payment
-   provider.
-
-   See `Creating a Payment Method`_ and `Creating a Shipping Method`.
+   Katso `Maksutavan luominen`_ and `Toimitustavan luominen`_.
 
    .. image:: payment-and-shipping/create-payment-method.png
 
-Payment Methods
-~~~~~~~~~~~~~~~
+Maksutavat
+~~~~~~~~~~
 
-Creating a Payment Method
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Maksutavan luominen
+^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Payment Method admin by clicking `Payment Methods`
-   under the `Settings` category from the Shuup Admin menu.
+1. Siirry Maksutavat-ylläpitosivulle valitsemalla `Maksutavat`
+   `Maksaminen ja toimitus` –kategorista Shuup hallintapaneelin
+   valikossa.
 
    .. image:: payment-and-shipping/payment-methods-menu.png
 
-2. Click the `New payment method` button in the Payment Methods admin
-   toolbar.
+2. Valitse `Uusi maksutapa` `Maksutavat`-ylläpitosivun työkalupalkista.
 
    .. image:: payment-and-shipping/new-payment-method-button.png
 
-3. Select a payment provider from the `payment processor` dropdown as
-   well as a payment service from the `service` dropdown.
+3. Valitse uusi maksupalveluntarjoaja `Maksupalvelun tarjoaja`
+   -pudotusvalikosta sekä maksupalvelu `Palvelu`-pudotusvalikosta.
 
    .. image:: payment-and-shipping/select-payment-method-provider.png
 
-4. Enter the remaining information for the method.
+4. Syötä kenttiin muut tiedot maksutavasta.
 
    .. image:: payment-and-shipping/new-payment-method.png
 
-5. Click `Save` to create the payment method.
+5. Valitse `Tallenna` vahvistaaksesi maksutavan luomisen.
 
-Shipping Methods
-~~~~~~~~~~~~~~~~
+Toimitustavat
+~~~~~~~~~~~~~
 
-Creating a Shipping Method
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Toimitustavan luominen
+^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Shipping Method admin by clicking `Shipping Methods`
-   under the `Settings` category from the Shuup Admin menu.
+1. Siirry Toimitustavat-ylläpitosivulle valitsemalla `Toimitustavat`
+   `Maksaminen ja toimitus` –kategoriasta Shuup hallintapaneelin valikossa.
 
    .. image:: payment-and-shipping/shipping-methods-menu.png
 
-2. Click the `New shipping method` button in the Shipping Methods admin
-   toolbar.
+2. Valitse `Uusi toimitustapa` `Toimitustavat`-ylläpitosivun työkalupalkista.
 
    .. image:: payment-and-shipping/new-shipping-method-button.png
 
-3. Select a shipping provider from the `carrier` dropdown as well as a
-   shipping service from the `service` dropdown
+3. Valitse toimituspalveluntarjoaja `Kuljetusliike`-pudotusvalikosta
+   sekä haluttu toimituspalvelu `Palvelu`-pudotusvalikosta.
 
    .. image:: payment-and-shipping/select-shipping-method-provider.png
 
-4. Enter the remaining information for the method.
+4. Syötä kenttiin muut tiedot toimitustavasta.
 
    .. image:: payment-and-shipping/new-shipping-method.png
 
-5. Click `Save` to create the shipping method.
+5. Valitse `Tallenna` vahvistaaksesi toimitustavan luomisen.
 
-Behavior Components
-~~~~~~~~~~~~~~~~~~~
+Käyttäytymiskomponentit
+~~~~~~~~~~~~~~~~~~~~~~~
 
-When a customer checks out, they are presented the choice of any
-available payment methods for their order.
+Kun asiakas siirtyy kassalle, hänelle esitetään kaikki mahdolliset
+maksutapavaihtoehdot tilauksen tekemiseen.
 
-Whether a particular payment method is applicable to an order depends
-on its behavior, which is comprised of any number of `behavior
-components`.
+Se, mitä maksutapavaihtoehtoja tilauksen tekemiseen tarjotaan, riippuu
+maksutavalle määritetystä käyttäytymisestä, joka koostuu
+`käyttäytymiskomponenteista`.
 
-`Behavior components` are essentially just individual components that,
-when taken together, define.
+Käyttäytymiskomponentit ovat pohjimmiltaan yksittäisiä komponentteja,
+jotka yhteen laitettuna määrittävät:
 
-1. Whether a payment method is available for an order
-2. The amount to charge for that payment method, if available
+1. Onko tietty maksutapa valittavissa tilaukselle vai ei
+2. Kyseisen maksutavan kustannuksen, mikäli maksutapa on valittavissa
 
-Shuup also ships with the following basic components (although
-behavior components can also be added by :ref:`Addons`):
+Shuup sisältää seuraavat peruskomponentit (käyttäytymiskomponentteja
+voidaan lisätä myös lisäosina :ref:`Addons`):
 
-Fixed cost
-  Add a fixed cost.
-Waiving cost
-  Add a cost that is only applied up to a price limit.
-Weight limits
-  Limit availability of the service based on total weight of products.
-Weight-based pricing range
-  Add a cost to the order if it is within a specific weight range
+Kiinteä kustannus
+    Lisää kiinteä kustannus.
+Häviävä kustannus
+    Lisää kustannus, joka on voimassa vain tiettyyn tilauksen arvoon asti.
+Painorajat
+    Rajoita palvelun saatavuutta perustuen tuotteiden kokonaispainoon.
+Painon mukaan määräytyvä hinnoittelu
+    Lisää kustannus jos tuotteiden kokonaispaino osuu määrättyyn
+    painohaarukkaan.
 
 .. note::
-   If there are multiple valid weight-based pricing ranges for an
-   order, the cheapest-option will be selected.
+   Jos tilaukselle on useita mahdollisia painon mukaan määräytyviä
+   hintahaarukoita, valitaan niistä automaattisesti alin hinta.
 
-Adding a Behavior Component to a Method
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Käyttäytymiskomponentin lisääminen toimitus- tai maksutapaan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Navigate to the Shipping or Payment Methods admin by clicking
-   `Shipping Methods` or `Payment Methods` under the `Settings`
-   category from the Shuup Admin menu.
+1. Siirry maksutapojen tai toimitustapojen ylläpitosivulle valitsemalla
+   `Maksutavat tai Toimitustavat` `Maksaminen ja toimitus` –kategoriasta
+   Shuup hallintapaneelin valikosta.
 
    .. image:: payment-and-shipping/payment-methods-menu.png
 
-2. Select the shipping or payment method to which you want to add
-   behavior components.
+2. Valitse taulukosta se toimitus- tai maksutapa, johon haluat lisätä
+   käyttäytymiskomponentteja.
 
    .. image:: payment-and-shipping/select-payment-method.png
 
-3. Click the `Behavior` tab on the left-hand side of the screen.
+3. Valitse `Käyttäytyminen`-välilehti vasemmanpuoleisesta valikosta.
 
    .. image:: payment-and-shipping/behavior-tab.png
 
-4. Select behavior component type from the `Behavior component type`
-   dropdown and press the `Add component` button to add a blank form for
-   the selected behavior component.
+4. Valitse käyttäytymiskomponentin tyyppi `Käyttäytymiskomponentin tyyppi`
+   –pudotusvalikosta ja valitse `Lisää komponentti` lisätäksesi tyhjän
+   lomakkeen valitulle käyttäytymiskomponentille.
 
    .. image:: payment-and-shipping/add-component.png
 
-5. Enter the behavior component settings, repeat as necessary to add
-   more behavior components.
+5. Syötä halutut asetukset uudelle käyttäytymiskomponentille ja toista
+   tarvittaessa lisätäksesi lisää käyttäytymiskomponentteja.
 
-6. Click `Save` to save the behavior components for the selected method.
+6. Valitse `Tallenna` tallentaaksesi käyttäytymiskomponentin valitulle
+   toimitus- tai maksutavalle.

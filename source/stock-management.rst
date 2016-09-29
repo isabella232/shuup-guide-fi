@@ -1,75 +1,81 @@
 
-Stock Management
+Varastonhallinta
 ================
 
-Shuup comes with built in stock management system. The stock management isn't
-activated in shop admin by default, but the activation can be done by merchant
-in a few easy steps. The Stock management setup process is guided process in
-the Shuup shop admin.
+Shuup-verkkokaupassa on sisäänrakennettu varastonhallintajärjestelmä.
+Varastonhallintaa ei ole aktivoitu kaupan hallintapaneelissa
+oletuksena, mutta kauppias voi aktivoida varastonhallinnan
+muutamalla helpolla toimenpiteellä. Varastonhallinnan käyttöönotto
+on ohjattu prosessi Shuup-kaupan hallintapaneelissa.
 
-Since all products aren't always stocked (like downloadable products) a good
-thing to keep in mind is, that to be able to manage product stock, a product
-must be first set as `Stocked`. Also to have a stock, it's required to have at
-least one `Supplier`. Stock can be easily managed in Shuup shop admin through
-any of the Stocked products, or in dedicated **Products / Stock management**
-view.
+Koska kaikki tuotteet eivät aina ole varastoitavia (kuten
+ladattavat tuotteet), on hyvä pitää mielessä, että voidakseen
+hallita tuotevarastoa on sinne kuuluvat tuotteet ensin merkittävä
+`Varastoiduksi`. Lisäksi, varaston aktivoiminen edellyttää, että
+kauppaan on lisätty vähintään yksi `Toimittaja`. Varastoa voidaan
+hallita hallintapaneelissa helposti minkä tahansa varastoidun tuotteen
+kautta, tai siihen tarkoitetussa `Tuotteet / Varastonhallinta` –näkymässä.
 
 
-Activating Stock management
----------------------------
+Varastonhallinnan aktivointi
+----------------------------
 
-**Set supplier stock managed:**
+**Aseta toimittajan varasto varastoitu-tilaan näin:**
 
-1. Login into Shuup shop admin at `https://youshopurl.com/sa`
-2. Open up the menu bar on top left hand side
-3. Select **Products / Suppliers** and open up `Simple supplier`-module
-   from Suppliers -table
-4. Check on **Stock Managed** and **Save**
+1. Kirjaudu Shuup-kauppasi hallintapaneeliin osoitteessa https://kauppasiurl.com/sa
+2. Avaa hallintapaneelin valikko vasemmasta yläkulmasta
+3. Valitse **Tuotteet / Toimittajat** ja avaa
+   `Yksinkertainen toimittaja` –moduuli toimittajataulukosta
+4. Rastita ruutu kohtaan `Varastoitu` ja valitse `Tallenna`.
 
-.. tip::
-
-    Shuup is prepared to use several supplier modules and each of them can
-    have their own stock
-
-Set product as stocked
-----------------------
-
-Next, let Shuup know, which of your products are actually stocked. Decide
-which products stock you want to manage. Find these product in
-**Products / Products**
-
-Open up the product you want to manage and check that the product has it's
-stock managed at **Additional details**. Set the option `stock` as **Stocked**.
 
 .. tip::
 
-    This will activate Stock Management for the product.
-    From now on the stock of this particular product can be managed in
-    `Stock management`_
+    Shuupissa voidaan käyttää useita toimittajamoduuleita
+    ja kullakin niistä voi olla oma varasto.
 
-Managing stock
---------------
+Tuotteen asettaminen varastoiduksi
+----------------------------------
 
-Managing stock in Shuup is simply clean. Stock managing is available through
-each specific product at `Products` or at it's own `Stock management`-views
-in shop admin.
+Seuraavaksi tulee määrittää, mitkä tuotteet ovat varastoitavia.
+Valitse mitkä tuotteet haluat näkyviin varastossasi. Tuotteet
+löydät hallintapaneelin valikosta kohdasta **Tuotteet / Tuotteet**
 
-Whether the merchant needs to manage only one product, or several product
-stocks at a time, in both of the use case variations the stock management
-behaviour is the same. The only difference is, that in Stock Management view
-a merchant may easily view all the products at one glimpse and manage their
-stocks. In product settings view the stock is managed only for one particular
-product.
-
-This way the stock management is easy whether merchant is browsing for
-a single product and has a sudden need to manage it's stock, or adding
-various products to the stock at once.
+Avaa halutun tuotteen asetukset ja siirry vasemman laidan
+valikosta välilehdelle **Lisätietoja**. Valitse kohdan
+**Varasto** pudotusvalikosta `Varastoitu`.
 
 .. tip::
 
-    When adding stock, it's good to notice, that merchant should always
-    include information of product purchase price in shop currency, and the
-    quantity to add to the stocks. These will affect in stock reports.
+    Tämä toimenpide aktivoi varastonhallinnan kyseiselle tuotteelle.
+    Tästä eteenpäin tämän tuotteen varastoa voidaan hallita
+`Varastonhallinnassa <Varastonhallinta>`_
+
+Varaston hallinnointi
+---------------------
+
+Varaston hallinnointi Shuupissa on yksinkertaisen selkeää.
+Varastoa voidaan hallita minkä tahansa yksittäisen tuotteen kautta
+hallintapaneelin valikon kohdassa `Tuotteet` tai siihen erityisesti
+suunnitellussa `Varastonhallinta`-näkymässä, joka löytyy myös
+hallintapaneelin valikosta.
+
+Varastonhallinta käyttäytyy molemmissa käyttötapauksissa samalla
+tavalla riippumatta siitä, haluaako kauppias hallita vain yhden
+tuotteen varastoa tai useampaa tuotevarastoa kerralla. Ainoa ero on se,
+että `Varastonhallinta`-näkymässä kauppias näkee kaikki tuotteet
+yhdellä listalla ja hallinnoida näiden varastoja. `Tuotteet`-valikon
+näkymässä varastoa hallitaan kerrallaan yhden valitun tuotteen osalta.
+
+Tällä tavoin varaston hallinta on helppoa, oli kauppias sitten halukas
+muuttamaan varastoasetuksia selatessaan yksittäisiä tuotteita, tai
+halutessaan lisätä useita tuotteita kerralla.
+
+.. tip::
+
+    Kun varastoa lisätään, tulisi aina lisätä tuotteelle tiedot
+    myyntihinnasta kaupan valuutassa ja varastoon lisättävien tuotteiden
+    määrä. Nämä tiedot vaikuttavat varastoraportteihin.
 
 
 How to manage stock on a product
@@ -81,38 +87,47 @@ How to manage stock on a product
 
 .. tip::
 
-    Before trying to manage stock on a product make sure, that the Supplier
-    and product has stock setting set as **Stocked**
+    Ennen kuin siirryt hallinnoimaan tuotteen varastointia,
+    varmista että molemmat, tuotteen toimittaja ja tuote, on
+    asetuksissa merkitty varastoiduiksi.
 
-**Add stock:** Input your product purchase price and quantity and select
-**Add stock**
-**Remove stock:** Input a negative value of how many products you want to
-remove, input product purchase price and quantity and select **Remove stock**
+**Lisää varastoon:** Syötä tuotteen ostohinta sekä kappalemäärä
+ja valitse **Lisää varastoon**.
+
+**Poista varastosta:** Syötä miinusmerkkinen arvo, joka vastaa
+poistettavien tuotteiden määrää, syötä tuotteen ostohinta sekä
+kappalemäärä ja valitse **Poista varastosta**.
 
 .. tip::
 
-    Your stock physical count, logical count, value per unit and total value
-    is automatically updated after each time you add or remove stock
+    Varastosi fyysinen saldo, looginen saldo, arvo per yksikkö ja
+    kokonaisarvo päivittyvät automaattisesti jokaisen varastoon
+    lisäämisen ja varastosta poistamisen jälkeen.
 
 
 How to manage stocks in general
 -------------------------------
 
-1. Navigate to `Stock Management` in shop admin, through the menu
-   **Products / Stock management**
-2. Locate the product you want to manage the stock for
+1. Siirry `Varastonhallintaan` kaupan hallintapaneelin valikossa
+   kohdasta **Tuotteet / Varastonhallinta**.
+2. Etsi tuotetta, jonka varastoinnin asetuksia haluat muuttaa.
 
 .. tip::
 
-    Before trying to manage stock on a product make sure, that the Supplier
-    and product has stock setting set as **Stocked**
+    Ennen kuin siirryt hallinnoimaan tuotteen varastointia, varmista
+    että molemmat, tuotteen toimittaja ja tuote, on asetuksissa
+    merkitty varastoiduiksi.
 
-**Add stock:** Input your product purchase price and quantity and select
-**Add stock**
-**Remove stock:** Input a negative value of how many products you want to
-remove, input product purchase price and quantity and select **Remove stock**
+**Lisää varastoon:** Syötä tuotteen ostohinta sekä kappalemäärä ja
+valitse **Lisää varastoon**.
+
+**Poista varastosta:** Syötä miinusmerkkinen arvo, joka vastaa
+poistettavien tuotteiden määrää, syötä tuotteen ostohinta sekä
+kappalemäärä ja valitse **Poista varastosta**.
+
 
 .. tip::
 
-    Your stock physical count, logical count, value per unit and total value
-    is automatically updated after each time you add or remove stock
+    Varastosi fyysinen saldo, looginen saldo, arvo per yksikkö ja
+    kokonaisarvo päivittyvät automaattisesti jokaisen varastoon
+    lisäämisen ja varastosta poistamisen jälkeen.
