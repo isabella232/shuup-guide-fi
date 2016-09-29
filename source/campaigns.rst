@@ -1,10 +1,12 @@
-Campaigns
-=========
+Kampanjoiden hallinta
+=====================
 
-Shuup Ecommerce platform comes built in with customized and easily
-extendable campaign management system. Shuup's modular campaign
-management structure allows extending the feature to most innovative
-campaign models and even integrations.
+Shuup-verkkokauppa-alustan sisäänrakennettuihin ominaisuuksiin
+kuuluu mukautettava ja helposti laajennettava kampanjoiden
+hallintajärjestelmä. Shuupin modulaarinen kampanjoiden
+hallintarakenne mahdollistaa ominaisuuden laajentamisen
+innovatiivisimpiin kampanjamalleihin ja jopa ulkopuoliset
+integraatiot.
 
 Campaign Types
 --------------

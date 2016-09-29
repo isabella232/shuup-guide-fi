@@ -6,7 +6,7 @@ Tervetuloa Shuup ohjeeseen!
    your liking, but it should at least contain the root `toctree`
    directive.
 
-Contents:
+Sisältö:
 
 .. toctree::
    :maxdepth: 2
@@ -23,9 +23,3 @@ Contents:
    customers-and-users
    reports-and-analytics
    addons
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`

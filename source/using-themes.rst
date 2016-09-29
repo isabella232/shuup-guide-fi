@@ -1,33 +1,33 @@
-Using Themes
-===================
+Teemojen käyttö
+===============
 
-Installing Themes
-~~~~~~~~~~~~~~~~~
+Teemojen asentaminen
+~~~~~~~~~~~~~~~~~~~~
 
-Shuup Themes (or Xthemes) are downloaded and installed like other
-addons.
+Shuup-teemat (tai Xtheme:t) voidaan ladata ja asentaa kuten muutkin
+lisäosat.
 
-See :ref:`Addons` for general addon installation instructions.
+Katso Lisäosat :ref:`Addons` nähdäksesi lisäosien yleiset asennusohjeet.
 
-Activating Themes
-~~~~~~~~~~~~~~~~~
+Teemojen aktivointi
+~~~~~~~~~~~~~~~~~~~
 
-When a shop is first set up, visitors will see the following notice
-until a theme for the shop has been activated.
+Kun verkkokauppa avataan, kävijät näkevät seuraavan ilmoituksen kunnes
+kauppaan on aktivoitu jokin teema:
 
 .. image:: using-themes/no-theme-selected.png
 
-To active a theme, go to the Shuup Admin and click `Themes` under the
-`Storefront` category from the Shuup Admin menu.
+Aktivoidaksesi teeman, siirry Shuup hallintapaneeliin ja valitse
+päävalikosta `Teemat`.
 
 .. image:: using-themes/themes-menu.png
 
-From here, themes can be activated or configured.
+Täällä teemoja voidaan aktivoida ja muuttaa niihin liittyviä asetuksia.
 
 .. image:: using-themes/activate-theme.png
 
-Clicking `Activate` will activate the theme, and by clicking
-`Configure`, you can configure any custom theme settings.
+Valitsemalla `Aktivoi`, teema tulee aktiiviseksi ja valitsemalla
+`Muokkaa`, voit muuttaa kaikkia teemoihin liittyviä asetuksia
 
 Editing a Page
 ~~~~~~~~~~~~~~

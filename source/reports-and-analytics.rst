@@ -1,4 +1,4 @@
-Reports and Analytics
-=====================
+Raportit ja analytiikka
+=======================
 
-Feature coming soon!
+Tämä ominaisuus on tulossa pian!

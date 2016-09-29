@@ -1,7 +1,7 @@
 .. _Addons:
 
-Addons
-======
+Addonit
+=======
 
 Installing Addons
 ~~~~~~~~~~~~~~~~~
@@ -43,27 +43,28 @@ problems uploading your file it should be included in the list of
 installed addons. However, it will not yet be enabled.
 
 
-Enabling Addons
-~~~~~~~~~~~~~~~
+Lisäosien asettaminen käytössä-tilaan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-After an addon has been installed, it must be enabled. To enable an
-installed addon, check the `Is enabled` column next to the addon name
-and click `Save addon changes` on the Addons toolbar.
+Kun lisäosa on asennettu, se tulee asettaa `Käytössä`-tilaan Lisäosat-
+ylläpitosivulla. Ottaaksesi lisäosan käyttöön, rastita ruutu `Käytössä`-
+sarakkeessa kyseessä olevan lisäosan nimen kohdalla ja valitse `Tallenna
+lisäosien muutokset` sivun työkalupalkista.
 
 .. image:: addons/enable-addon.png
 
-If changes were made to the list of enabled/disabled addons, the server
-must be reloaded and a `Reload application` button will appear on the
-Addons admin toolbar.
+Jos lisäosien listaan tehdään muutoksia niiden `Käytössä`-sarakkeessa,
+palvelin on päivitettävä sivun työkalupalkkiin ilmestyvästä `Päivitä
+sovellus`-painikkeesta.
 
 .. warning::
-   When you reload the application server, it may take some time for
-   the new instance of your application to properly initialize.
+   Sovelluksen palvelimen päivittäminen saattaa aiheuttaa viiveen ennen
+   kuin sovellus käynnistyy uudestaan.
 
-   In addition, there is always a chance for the server to not properly
-   initialize at all, in which case you may need to troubleshoot the
-   problem yourself (or have a system administrator handy).
+   Lisäksi, on pieni mahdollisuus, että sovellus ei käynnisty oikein
+   ollenkaan päivittämisen jälkeen, jolloin on suoritettava vianmääritys
+   ja mahdollisesti otettava yhteyttä järjestelmän ylläpitäjään.
 
-Clicking this button will take you to the Reload Application Server
-page, where the server can be reloaded by pressing the `Reload
-Application Server` button.
+Klikattuasi `Päivitä sovellus` –painiketta sinut ohjataan Sovelluksen
+palvelimen päivitys –sivulle, missä palvelin voidaan päivittää
+`Päivitä sovelluksen palvelin` –painikkeesta.

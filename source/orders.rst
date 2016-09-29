@@ -1,49 +1,50 @@
-Orders
-======
+Tilaukset
+=========
 
-Creating an Order
-~~~~~~~~~~~~~~~~~
+Tilauksen luominen
+~~~~~~~~~~~~~~~~~~
 
-Orders can be made in one of two ways--by a customer through the shop
-front or by a merchant through the Shuup Admin.
+Tilaus voidaan luoda kahdella eri tavalla –- asiakkaan toimesta
+verkkokaupassa tai kauppiaan toimesta Shuup hallintapaneelissa.
 
-To create an order through the Shuup Admin:
+Luodaksesi tilauksen Shuup hallintapaneelissa:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset`
+Shuup hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Click the `New order` button on the Order admin toolbar
+2. Valitse `Uusi tilaus` `Tilaukset`-ylläpitosivun työkalupalkista.
 
    .. image:: orders/new-order.png
 
-3. Under the `Customer details` section, click `Select Existing
-   Customer` to launch the customer selection popup, or leave choice
-   as `New Customer` to create a new customer along with the order.
+3. Siirry `Asiakkaan tiedot` –välilehdelle ja valitse
+   `Valitse olemassa oleva asiakas` avataksesi asiakkaan
+   valintaikkunan tai valitse `Uusi asiakas` luodaksesi uuden
+   asiakkaan tilauksen luonnin yhteydessä.
 
    .. image:: orders/customer-details.png
 
-   Enter any required or missing address information.
+   Syötä tarvittavat osoitetiedot.
 
-4. Under the `Order contents` section, click `Add new line` to add
-   blank order lines to the order.
+4. Valitse `Tilauksen sisältö` –osiossa `Lisää uusi rivi`
+   lisätäksesi tyhjiä tilausrivejä tilaukseen.
 
-   These can either be of type `product`, `other`, or `text/comment`.
+   Nämä voivat olla tyyppiä tuote, muu tai teksti/kommentti.
 
-   If adding a product, clicking `Select product` will launch the
-   product browser window.
+   Jos lisäät tuotetta, valitsemalla `Valitse tuote` saat näkyviin
+   tuotteiden valintaikkunan.
 
    .. image:: orders/add-new-line.png
 
-   Here are the types of lines you can create in an order:
+   Voit valita jonkun näistä rivityypeistä tilaukselle:
 
-   Product line
-      A product, quantity, and any pricing or discount information
-   Other line
-      A miscellaneous priced line
-   Text/Comment line
-      A non-priced text line
+    Tuoterivi
+        Tuote, määrä ja mitkä tahansa halutut hinta- ja alennustiedot
+    Muu rivi
+        Muu hinnoittelurivi
+    Teksti-/kommenttirivi
+        Ei-hinnoiteltu tekstirivi
 
 5. Optionally, the `Quick add product line` form can be used to quickly
    add product lines to the order. For example, this can be used when
@@ -58,163 +59,166 @@ To create an order through the Shuup Admin:
 
       .. image:: orders/quick-add.png
 
-6. Select shipping and payment methods for the order from the Shipping
-   and Payment Methods dropdowns.
+6. Valitse toimitus- ja maksutavat tilaukselle niille osoitetuista
+   pudotusvalikoista
 
    .. image:: orders/shipping-and-payment-methods.png
 
-7. Click the `Proceed` button to create the order.
+7. Valitse `Jatka` luodaksesi tilauksen.
 
    .. image:: orders/proceed-button.png
 
 .. note::
-   You must select shipping and payment methods for each order.
+   Jokaiselle tilaukselle on valittava toimitus- ja maksutapa.
 
 .. note::
-   Method rules, taxes and possible extra discounts are calculated after proceeding.
+   Toimitus- ja maksutapasäännöt, verot ja mahdolliset lisäalennukset
+   lasketaan tilaukseen seuraavaan vaiheeseen edettäessä.
 
 
-Editing an Order
-~~~~~~~~~~~~~~~~
+Tilauksen muokkaaminen
+~~~~~~~~~~~~~~~~~~~~~~
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset` Shuup
+   hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order that you wish to edit.
+2. Valitse tilaus jota haluat muokata.
 
    .. image:: orders/select-order.png
 
-3. Click `Edit Order` in the order toolbar.
+3. Valitse `Muokkaa tilausta` tilausten työkalupalkista.
 
    .. image:: orders/edit-order-button.png
 
-4. Make any desired changes to the order contents as done when
-   `Creating an Order`_.
+4. Tee halutut muutokset tilauksen sisältöön samalla tavalla kuin
+   `tilausta luodessa <Tilauksen luominen>`_.
 
    .. image:: orders/edit-order-contents.png
 
-6. Click the `Proceed` button to save the order contents.
+5. Valitse `Jatka` tallentaaksesi muutokset tilauksen sisällössä.
 
    .. image:: orders/proceed-button.png
 
 
-Order Shipments
-~~~~~~~~~~~~~~~
+Tilausten lähetykset
+~~~~~~~~~~~~~~~~~~~~
 
-Creating an Order Shipment
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Tilauksen lähetyksen luominen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To create an order shipment:
+Luodaksesi lähetyksen tilaukselle:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset` Shuup
+   hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order for which you want to create a shipment.
+2. Valitse tilaus, jolle haluat luoda lähetyksen.
 
    .. image:: orders/select-order.png
 
-3. Click `Create Shipment` in the order toolbar.
+3. Valitse `Luo lähetys` tilausten työkalupalkista.
 
    .. image:: orders/create-shipment-dropdown.png
 
-4. For each product, select the quantity of that product to include
-   in the shipment.
-   To easily select all remaining unshipped quantities, click `Set All
-   Products To Ship`.
+4. Valitse kullekin tuotteelle haluttu lähetykseen sisällytettävä
+   määrä. Voit helposti asettaa kaikille tuotteille saman
+   toimitettavan määrän valitsemalla `Aseta lähetys kaikille tuotteille`.
 
    .. image:: orders/create-shipment.png
 
-5. Select a product supplier from the dropbown menu.
+5. Valitse tavarantoimittaja pudotusvalikosta.
 
    .. image:: orders/supplier.png
 
-6. Click the `Create Shipment` button to create the shipment.
+6. Valitse `Luo lähetys` luodaksesi lähetyksen.
 
-Printing a Delivery Slip
-^^^^^^^^^^^^^^^^^^^^^^^^
+Lähetysluettelon tulostaminen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To print a delivery slip for an order shipment:
+Tulostaaksesi lähetysluettelon tilauksen lähetykselle:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset` Shuup
+   hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order whose delivery slip you want to print
+2. Valitse tilaus, jonka lähetysluettelon haluat tulostaa.
 
    .. image:: orders/select-order.png
 
-3. If you haven't already done so, create an order shipment.
+3. Luo tilauksen lähetys, mikäli et ole näin jo tehnyt.
 
-   See `Creating an Order Shipment`_
-4. Click `Print` in the Orders admin toolbar
+   Katso `Tilauksen lähetyksen luominen`_
+
+4. Valitse `Tulosta` Tilaukset-ylläpitosivun työkalupalkista.
 
    .. image:: orders/print-button.png
 
-5. Select `Get Delivery Slip` for the order shipment you would like to
-   print (there will be one available for each shipment).
+5. Valitse `Hae lähetysluettelo` tilauksen lähetykselle, jonka
+   haluat tulostaa (kullakin tilauksella tulee olemaan yksi
+   mahdollinen valinta).
 
    .. image:: orders/get-delivery-slip.png
 
-6. You will now be taken to a PDF of the delivery slip, which you can
-   either print or save to your computer from your browser menu
+6. Siirryt nyt lähetysluettelon PDF-näkymään, jonka voit joko
+   tulostaa tai tallentaa tietokoneellesi selaimesi valikosta.
 
    .. image:: orders/delivery-slip.png
 
-Order Payments
-~~~~~~~~~~~~~~
+Tilauksen maksut
+~~~~~~~~~~~~~~~~
 
-Viewing Order Payments
-^^^^^^^^^^^^^^^^^^^^^^
+Tilauksen maksujen katselu
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To view all payments for an order:
+Nähdäksesi kaikki tilaukseen liittyvät maksut:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset`
+   Shuup hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order whose payments you want to view
+2. Valitse tilaus, johon liittyvät maksut haluat nähdä.
 
    .. image:: orders/select-order.png
 
-3. Click the `Payments` tab on the left-hand side of the screen
+3. Valitse `Maksut`-välilehti sivun vasemman laidan valikosta.
 
    .. image:: orders/payments-tab.png
 
-4. Details will be listed for all payments associated with that order
+4. Saat näkyviin listan kaikista kyseiseen tilaukseen
+   liittyvistä maksuista.
 
    .. image:: orders/payments.png
 
-Creating an Order Payment
+Tilauksen maksun luominen
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To create an order payment:
+Luodaksesi tilaukselle maksun:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset`
+   Shuup hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order for which you want to create a payment
+2. Valitse tilaus, jolle haluat luoda maksun.
 
    .. image:: orders/select-order.png
 
-3. Click `Create Payment` in the order toolbar.
+3. Valitse `Luo maksu` sivun työkalupalkista.
 
    .. image:: orders/create-payment-dropdown.png
 
-4. Enter the amount of the payment in the `Payment amount` field or
-   click `Get Remaining Total` to automatically fill will remaining
-   unpaid total.
+4. Syötä maksettu summa kenttään `Maksun määrä` tai valitse
+   `Hae jäljellä oleva summa`, jolloin puuttuva kokonaissumma
+   annetaan automaattisesti.
 
    .. image:: orders/create-payment.png
 
-6. Click the `Create Payment` button to create the payment.
+5. Valitse `Luo maksu` luodaksesi maksun.
 
 Order Refunds
 ~~~~~~~~~~~~~
@@ -304,80 +308,82 @@ To create a full refund for an order:
 
 6. Click the `Confirm Refund` to create a refund in the full amount.
 
-Canceling an Order
-~~~~~~~~~~~~~~~~~~
+Tilauksen peruuttaminen
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
-   Only unpaid and unshipped orders can be canceled.
+   Vain maksamattomia ja ei-toimitettuja tilauksia voidaan peruuttaa.
 
-   If an order has been fully paid or fully shipped, the `Cancel Order`
-   button will be disabled and you will not be able to cancel the
-   order.
+   Jos tilaus on maksettu tai toimitettu kokonaan, `Peruuta tilaus`
+   –painike ei ole käytössä, eikä tilausta ole mahdollista peruuttaa.
 
-To cancel an order:
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+Peruuttaaksesi tilauksen:
+
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset`
+   Shuup hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order that you want to cancel
+2. Valitse tilaus, jonka haluat peruuttaa.
 
    .. image:: orders/select-order.png
 
-3. Click `Cancel Order` in the order toolbar
+3. Valitse `Peruuta tilaus` sivun työkalupalkista.
 
    .. image:: orders/cancel-order-button.png
 
-The order will now be marked as `canceled` in the Orders admin list.
+Tilaus merkitään nyt `peruutetuksi` tilausten ylläpidon listalla.
 
-Completing an Order
-~~~~~~~~~~~~~~~~~~~
-Once an order has been shipping, it can be marked as completed.
+Tilauksen asettaminen käsitellyksi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To set an order as complete:
+Kun tilaus on lähetetty toimitettavaksi, se voidaan asettaa
+käsitellyksi.
 
-1. Navigate to the Orders admin page by clicking `Orders` under the
-   `Orders` category from the Shuup Admin menu.
+Asettaaksesi tilaus käsitellyksi:
+
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla `Tilaukset` Shuup
+   hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order you want to set complete
+2. Valitse tilaus, jonka haluat asettaa käsitellyksi.
 
    .. image:: orders/select-order.png
 
-3. Click `Set Complete` in the order toolbar
+3. Valitse `Aseta käsitellyksi` sivun työkalupalkista.
 
    .. image:: orders/set-complete-button.png
 
-The order will now be marked as `completed`.
+Tilaus on nyt asetettu `käsitellyksi`.
 
 .. note::
-   If the order cannot be completed (not all items have been shipped),
-   the `Set Complete` button will be disabled and you will not be able
-   to complete the order.
+   Jos tilausta ei voida asettaa käsitellyksi (kaikkia tuotteita ei
+   ole lähetetty), `Aseta käsitellyksi` –painike ei ole käytössä,
+   eikä tilausta ole mahdollista asettaa käsitellyksi.
 
-Printing an Order Confirmation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Tilausvahvistuksen tulostaminen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Navigate to the Orders admin page by clicking `Orders` under the 
-   `Orders` category from the Shuup Admin menu.
+1. Siirry Tilaukset-ylläpitosivulle valitsemalla
+   `Tilaukset` Shuup hallintapaneelin valikossa.
 
    .. image:: orders/orders-menu.png
 
-2. Select the order whose confirmation you want to print
+2. Valitse tilaus, jonka tilausvahvistuksen haluat tulostaa.
 
    .. image:: orders/select-order.png
 
-3. Click `Print` in the order toolbar
+3. Valitse `Tulosta` sivun työkalupalkista.
 
    .. image:: orders/print-button.png
 
-4. Select `Get Order Confirmation` from the dropdown menu
+4. Valitse `Hae tilausvahvistus` pudotusvalikosta.
 
    .. image:: orders/get-order-confirmation.png
 
-5. You will now be taken to a PDF of the order confirmation, which you
-   can either print or save to your computer from your browser menu
+5. Siirryt nyt tilausvahvistuksen PDF-näkymään, jonka voit joko
+   tulostaa tai tallentaa tietokoneellesi selaimesi valikosta.
 
    .. image:: orders/order-confirmation.png
